@@ -1,0 +1,10 @@
+<div class="container" style="margin-left: 250px;">
+    <div class="card" style="width: 1500px;">
+        <div class="card-body">
+            <h5>{{mail.sender}}</h5><p>({{mail.createDate | date:'dd-MM-yyyy HH:mm'}})</p>
+            <h3 class="card-title">{{mail.title}}</h3>
+            <p class="card-text">{{mail.content}}</p>
+            <a href="/reply/{mail.id}">Reply</a>
+        </div>
+      </div>
+</div>

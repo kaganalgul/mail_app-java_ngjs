@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <form novalidate="novalidate">
+        <div class="form-outline mb-4">
+            <label class="form-label" for="to">To</label>
+            <input type="text" id="to" class="form-control" ng-model="mail.receiverList" />
+          </div>
+        <div class="form-outline mb-4">
+            <label class="form-label" for="title">Title</label>
+            <input type="text" id="title" class="form-control" ng-model="mail.title" />
+          </div>
+          <div class="form-outline mb-4">
+            <label class="form-label" for="content">Content</label>
+            <input type="text" id="content" class="form-control" ng-model="mail.content" />
+          </div>
+        <div class="form-outline mb-4">
+          <label class="file" for="file">File</label>
+          <input type="file" id="file" class="form-control" ng-model="mail.file" />
+        </div>
+      
+        <!-- Submit button -->
+        <button type="button" class="btn btn-primary btn-block mb-4" ng-click="send()">Send</button>
+        </div>
+      </form>
+</div>
